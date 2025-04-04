@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+        <form id="task-form">
+            <input type="number" id="task-id" placeholder="Task ID" min="1" required>
+            <input type="text" id="task-title" placeholder="Task Title" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+        <div id="error-message" style="color: red;"></div> <!-- Added for error display -->
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
